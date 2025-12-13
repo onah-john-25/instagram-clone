@@ -1,9 +1,61 @@
 <html>
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <img src="images/logo.png">
-        <script src="index.js"></script>
+        <header class="main-header">
+            <div class="container">
+                <a href="/index.html" class="oldagram-logo">
+                    <img src="images/logo.png" alt="oldagram logo">
+                </a>
+                <img src="images/user-avatar.png" alt="Headshot of Per Borgen, CEO of SCRIMBA." class="user-avatar avatar">
+            </div>
+        </header>
+
+        <main>
+            <div class="container" id="post-wrapper">
+                <article class="post">
+                    <div class="container">
+                        <header class="post-header">
+                            <img src="images/avatar-vangogh.jpg" alt="Profile picture of Vangogh." class="profile-pic avatar">
+                            <div class="user-info">
+                                <h2 class="user-name text-small-bold">
+                                    Vincent Vangogh
+                                </h2>
+                                <p class="location">
+                                    Zudert, NetherLands
+                                </p>
+                            </div>
+                        </header>
+
+                        <figure class="post-media">
+                            <img src="images/post-vangogh.jpg" alt="A media post of Vicent Vangogh.">
+                        </figure>
+
+                        <div class="post-actions">
+                            <button aria-label="Like post.">
+                                <img src="images/icon-heart.png" alt="">
+                            </button>
+                            <button aria-label="Comment on post.">
+                                <img src="images/icon-comment.png" alt="">
+                            </button>
+                            <button aria-label="Share post">
+                                <img src="images/icon-dm.png" alt="">
+                            </button>
+                        </div>
+
+                        <span class="likes-count text-small-bold" aria-label="21,495 likes"  class="post-likes text-small-bold">21,492 likes</span>
+
+                        <div class="post-comments">
+                            <ul>
+                                <li><strong>vincey1853</strong> just took a few mushrooms lol😅</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
     </body>
 </html>
+

@@ -1,5 +1,104 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
 }
+
+body {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #F5F5F5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.avatar {
+    width: 34px;
+    border-radius: 50%;
+}
+
+.text-small-bold {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.main-header, main > .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+main > .container {
+    margin-bottom: 25px;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 15px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.main-header .oldagram-logo {
+    text-decoration: none;
+}
+
+.main-header .oldagram-logo img {
+    width: 127px;
+}
+
+.post header {
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   padding: 10px;
+}
+
+.post-actions {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.post-actions button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-actions button:hover,
+.post-actions button:hover {
+    opacity: .5;
+    transform: scale(1.1);
+}
+
+.post-actions button img {
+    width: 23px;
+}
+
+.likes-count {
+    margin-left: 13px;
+}
+
+.post-comments {
+    padding: 16px 13px;
+}
+
+
+
+
 
