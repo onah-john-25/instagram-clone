@@ -36,6 +36,7 @@ const posts = [
 
 const feedEl = document.getElementById('post-wrapper')
 
+// render post 
 function renderPosts() {
     feedEl.innerHTML = ''
     for(let i = 0; i < posts.length; i++) {
@@ -44,6 +45,7 @@ function renderPosts() {
 }
 renderPosts()
 
+// create html element
 function createPostElement(post) {
     const article = document.createElement('article')
     article.className = 'post'
@@ -91,7 +93,11 @@ function createPostElement(post) {
     return article
 }
 
-
+// like post
+function likePost(post) {
+    post.liked = !post.liked
+    post.likes += post.liked ? 1 : -1
+}
 feedEl.addEventListener('click', function(e) {
     const btn = e.target.closest('.like-btn')
     if(!btn) return
@@ -101,9 +107,23 @@ feedEl.addEventListener('click', function(e) {
 
     const post = posts.find(p => p.id === postId)
 
-    post.liked = !post.liked
-    post.likes += post.liked ? 1 : -1
+    likePost(post)
 
     renderPosts()
+})
+
+// double click post to like
+feedEl.addEventListener('dblclick', function(e) {
+    const postMedia = e.target.closest('.post-media')
+    if(!postMedia) return
+
+    const postEl = postMedia.closest('.post')
+    const postId = Number(postEl.dataset.id)
+
+    const post = posts.find(p => p.id === postId)
+
+    likePost(post)
+
+    renderPosts()    
 })
 

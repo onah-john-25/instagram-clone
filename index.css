@@ -49,6 +49,10 @@ main > .container {
     gap: 25px;
 }
 
+main > .container figure {
+    cursor: pointer;
+}
+
 .main-header .container {
     display: flex;
     align-items: center;
