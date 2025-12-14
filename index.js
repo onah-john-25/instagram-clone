@@ -72,10 +72,10 @@ function createPostElement(post) {
             <div class="post-actions">
                 <button class="like-btn" aria-label="Like post.">
                     <i class="fa-${post.liked ? 'solid' : 'regular'} fa-heart"></i>
-                <button class="comment-btn aria-label="Comment on post.">
+                <button class="comment-btn" aria-label="Comment on post.">
                     <i class="fa-regular fa-comment"></i>
                 </button>
-                <button class="share-btn aria-label="Share post">
+                <button class="share-btn" aria-label="Share post">
                     <i class="fa-regular fa-paper-plane"></i>
                 </button>
             </div>
