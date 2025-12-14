@@ -36,11 +36,16 @@ ul {
 .main-header, main > .container {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.main-header, main > .container .post {
     background-color: #FFFFFF;
 }
 
 main > .container {
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .main-header .container {
@@ -77,17 +82,15 @@ main > .container {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
 }
 
 .post-actions button:hover,
-.post-actions button:hover {
+.post-actions button:focus {
     opacity: .5;
-    transform: scale(1.1);
 }
 
-.post-actions button img {
-    width: 23px;
+.post-actions button i {
+    font-size: 23px;
 }
 
 .likes-count {
